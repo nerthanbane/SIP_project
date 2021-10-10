@@ -23,7 +23,6 @@ body{
   height: 2000px;
   color: white;
   display: flex;
-
 }
 
 .mobile-container .header{
@@ -46,7 +45,7 @@ body{
 
 .mobile-container .header .user_icon{
   position:relative;
-  left:200px;
+  left:150px;
   margin: 20px;
   width: 50px;
   height: 50px;
@@ -55,7 +54,7 @@ body{
 
 }
 
-.mobile-container  .header .toggle{
+.toggle{
   background: url(menu.png);
   width: 50px;
   height: 50px;
@@ -64,8 +63,35 @@ body{
   cursor: pointer;
   z-index:10000;
   position: relative;
-  left:100px;
+  left:0px;
   margin: 20px;
   background-position: center;
   border:2px solid teal;
+}
+
+.toggle.active{
+  background: url(close.png);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header .navigation{
+  display:none;
+}
+
+.header .navigation.active{
+  width:550px;
+
+  height: 100%;
+  display: flex;
+  position: fixed;
+  background-color: #A1C935;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
 }

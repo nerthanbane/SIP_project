@@ -13,18 +13,29 @@
 <div class="header">
   <a href="#"><img src="logo.png" class="logo"></a>
   <a href="#"><img src="user_icon.png" class="user_icon"></a>
-  <div class="toggle">
-  </div>
-
-  <div class="navigation">
-
-  </div>
+  <div class="toggle" onclick=toggleMenu()></div>
+  <ul class="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Recycle</a></li>
+    <li><a href="#">Location</a></li>
+    <li><a href="#">History</a></li>
+    <li><a href="#">Announcement</a></li>
+    <li><a href="#">Reward</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">T&C</a></li>
+  </ul>
 </div>
 </div>
 
 
 <script>
-
+function toggleMenu(){
+  const menuToggle = document.querySelector('.toggle');
+  const navigation1 = document.querySelector('.navigation');
+  menuToggle.classList.toggle('active')
+  navigation1.classList.toggle('active')
+}
 </script>
 
 </body>
